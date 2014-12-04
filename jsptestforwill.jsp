@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-this is a jsp file test for github.com
+this is a jsp file test for github.com 
+
+this is a test to see if cole can see the changes I made to this 
 </body>
 </html>
