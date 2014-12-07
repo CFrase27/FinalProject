@@ -19,7 +19,18 @@ $(document).ready(function() {
         googleCalendarApiKey: '<AIzaSyD4wQusTnUVk5cpJACrrsaxyEXcVV9L_PA>',
         events: {
             googleCalendarId: 'vaoqs8a9auc5p0t3oh0dtpkfp0@group.calendar.google.com'
-            	className: 'gcal-event' // an option!
+
+            	events: 'usa__en@holiday.calendar.google.com',
+    			
+    			eventClick: function(event) {
+    				// opens events in a popup window
+    				window.open(event.url, 'gcalevent', 'width=700,height=600');
+    				return false;
+    			},
+    			
+    			loading: function(bool) {
+    				$('#loading').toggle(bool);
+    			
         }
     });
 });
